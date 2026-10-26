@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f6f2"><meta name="description" content="A seven-slide interactive classroom seminar explaining Bluetooth discovery, pairing, Classic, BLE, IoT setup and GATT.">
+  <title>Bluetooth – Basic Communication</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="fonts/fonts.css"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#slide">Skip to lesson</a>
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="Bluetooth seminar home"><span class="brand-mark" aria-hidden="true">ᛒ</span><span>Bluetooth<small>THE INTERACTIVE SEMINAR</small></span></a>
+    <nav aria-label="Seminar tools"><button id="overview">Chapters <kbd>G</kbd></button><button id="notes-toggle" aria-pressed="false" aria-controls="teaching-notes">Notes <kbd>N</kbd></button><button id="present" class="primary" aria-pressed="false">Present ↗</button></nav>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar"><div class="course-label">WIRELESS COMMUNICATION</div><h2>Nearby.<br>Connected.</h2><p>Everyday devices.<br>One wireless conversation.</p><nav id="chapter-nav" aria-label="Lesson chapters"></nav><div class="source-note"><span>7 SLIDES · ABOUT 14 MINUTES</span><p>A visual introduction.<br>No networking background needed.</p><button id="sources">Sources &amp; print ↗</button></div></aside>
+    <main id="main"><div class="lesson-meta"><span id="chapter-label"></span><span id="duration"></span></div><article id="slide" tabindex="-1" aria-label="Current seminar slide"></article><aside id="teaching-notes" hidden aria-label="Presenter notes"></aside></main>
+  </div>
+  <footer class="controls"><div class="control-left"><button id="motion" aria-label="Pause diagram animations" aria-pressed="false">Ⅱ <span>Motion</span></button><span class="shortcut-hint">Navigate <kbd>←</kbd> <kbd>→</kbd></span></div><div class="slide-progress"><span id="slide-count"></span><nav id="progress-dots" aria-label="Slide navigation"></nav></div><div class="control-right"><button id="previous" class="icon-button" aria-label="Previous slide">←</button><button id="next" class="primary">Next slide →</button><button id="fullscreen" class="icon-button" aria-label="Enter presentation fullscreen">⛶</button></div></footer>
+  <dialog id="overview-dialog" aria-labelledby="overview-title"><div class="dialog-top"><h2 id="overview-title">The learning journey.</h2><button data-close aria-label="Close chapters">×</button></div><div id="overview-grid"></div></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-top"><h2 id="sources-title">Sources &amp; lesson scope.</h2><button data-close aria-label="Close sources">×</button></div><p>Seven beginner-friendly slides, with original schematic diagrams. This is a teaching simulation; it does not scan or configure real devices.</p><div class="source-links"><a href="https://www.bluetooth.com/learn-about-bluetooth/tech-overview/" target="_blank" rel="noopener">Bluetooth SIG: technology overview ↗</a><a href="https://www.bluetooth.com/bluetooth-le-primer/" target="_blank" rel="noopener">Bluetooth SIG: BLE, discovery, security and GATT ↗</a><a href="https://www.bluetooth.com/specifications/specs/" target="_blank" rel="noopener">Bluetooth SIG: profiles and specifications ↗</a><a href="https://www.espressif.com/en/support/download/apps" target="_blank" rel="noopener">Espressif: BLE provisioning applications ↗</a></div><p>We focus on how nearby devices find, trust, connect and exchange useful information. Radio mathematics, packet formats and protocol internals are outside this lesson.</p><p>Print opens your browser’s print dialog. Choose “Save as PDF” for a printable lesson. Each slide has a completed static diagram and a separate page of presenter notes.</p><button id="print" class="primary">Print lesson / save PDF ↗</button></dialog>
+  <button id="edge-previous" class="edge-nav edge-left" hidden aria-label="Previous slide">‹</button><button id="edge-next" class="edge-nav edge-right" hidden aria-label="Next slide">›</button>
+  <div id="status" class="sr-only" role="status" aria-live="polite"></div><div id="toast" role="status"></div><div id="print-deck"></div>
+  <noscript><p class="noscript">Enable JavaScript to explore the interactive seminar.</p></noscript><script src="app.js"></script>
+</body></html>

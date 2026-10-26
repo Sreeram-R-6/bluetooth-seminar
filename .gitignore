@@ -1,0 +1,10 @@
+.browser-check/
+.browser-check-edge/
+docs/check-*.png
+docs/check-*.pdf
+docs/browser-check.log
+.test-tools/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
